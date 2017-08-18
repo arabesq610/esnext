@@ -1,14 +1,11 @@
+const exclaim = x => x + '!'
+    
 const capitalize = x =>
     x[0].toUpperCase() + x.substr(1)
 
 const doubleSay = x => x + ', ' + x
-const exclaim = x => x + '!'
 
-// const x = 'hello' > capitalize
+const x =
+    exclaim(capitalize(doubleSay('hello')))
 
-// let y = x
-
-//console.log(x);
-
-const x = exclaim('hello')
-//x hello!
+console.log(x) // Hello, hello!
